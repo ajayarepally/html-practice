@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body align="center">
+    <h1>Register form</h1>
+    <form action="./registersuccess.html" method="get">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" pattern="[a-z]+" title="please enter from a-z" placeholder="Enter Username" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="Email" id="email" placeholder="Enter Email" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="Password" id="password" placeholder="Enter Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&]).{8,16}" title="Password must contain 1 character from(a-z,A-Z,0-9,!@#$%&) and length should be b/w (8,16)" placeholder="Enter Password"  required><br><br>
+        <input type="submit" value="Register"><br><br>
+        <a href="./login.html">Login page</a>
+    </form>
+</body>
+</html>
